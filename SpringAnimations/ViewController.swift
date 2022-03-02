@@ -5,15 +5,35 @@
 //  Created by Николай Петров on 02.03.2022.
 //
 
-import UIKit
+import Spring
 
 class ViewController: UIViewController {
 
+    @IBOutlet var configurationInfoLable: UILabel!
+    @IBOutlet var upButtonOutlet: SpringButton!
+    @IBOutlet var downButtonOutlet: SpringButton!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        upButtonOutlet.layer.cornerRadius = 15
+        downButtonOutlet.layer.cornerRadius = 15
     }
-
+   
+    @IBAction func upButton() {
+        upButtonOutlet.animation = "fadeIn"
+        upButtonOutlet.curve = "spring"
+        upButtonOutlet.animate()
+    }
+    
+    @IBAction func downButton() {
+        downButtonOutlet.animation = "fadeIn"
+        downButtonOutlet.curve = "spring"
+        downButtonOutlet.animate()
+    }
+    
+    
 
 }
 
