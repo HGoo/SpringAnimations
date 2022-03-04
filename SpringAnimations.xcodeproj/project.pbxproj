@@ -14,6 +14,7 @@
 		DD2A6E4827CFB079007AA8AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD2A6E4627CFB079007AA8AC /* Main.storyboard */; };
 		DD2A6E4A27CFB079007AA8AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD2A6E4927CFB079007AA8AC /* Assets.xcassets */; };
 		DD2A6E4D27CFB079007AA8AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD2A6E4B27CFB079007AA8AC /* LaunchScreen.storyboard */; };
+		DD2A6E5A27D0CDBC007AA8AC /* DataForView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2A6E5927D0CDBC007AA8AC /* DataForView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		DD2A6E4927CFB079007AA8AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD2A6E4C27CFB079007AA8AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD2A6E4E27CFB079007AA8AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD2A6E5927D0CDBC007AA8AC /* DataForView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataForView.swift; sourceTree = "<group>"; };
 		E6AE2D228FBC91F876363A72 /* Pods_SpringAnimations.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpringAnimations.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -56,7 +58,6 @@
 				572A86B63F31C55F37854F72 /* Pods-SpringAnimations.debug.xcconfig */,
 				540000265F5A8526D13F5039 /* Pods-SpringAnimations.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -81,15 +82,64 @@
 		DD2A6E3F27CFB079007AA8AC /* SpringAnimations */ = {
 			isa = PBXGroup;
 			children = (
-				DD2A6E4027CFB079007AA8AC /* AppDelegate.swift */,
-				DD2A6E4227CFB079007AA8AC /* SceneDelegate.swift */,
-				DD2A6E4427CFB079007AA8AC /* ViewController.swift */,
-				DD2A6E4627CFB079007AA8AC /* Main.storyboard */,
-				DD2A6E4927CFB079007AA8AC /* Assets.xcassets */,
-				DD2A6E4B27CFB079007AA8AC /* LaunchScreen.storyboard */,
 				DD2A6E4E27CFB079007AA8AC /* Info.plist */,
+				DD2A6E5427CFD00A007AA8AC /* Models */,
+				DD2A6E5527CFD016007AA8AC /* View Controllers */,
+				DD2A6E5B27D20EC6007AA8AC /* Helper */,
+				DD2A6E5627CFD02B007AA8AC /* Storyboards */,
+				DD2A6E5827CFD078007AA8AC /* Resources */,
+				DD2A6E5727CFD062007AA8AC /* APP */,
 			);
 			path = SpringAnimations;
+			sourceTree = "<group>";
+		};
+		DD2A6E5427CFD00A007AA8AC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DD2A6E5527CFD016007AA8AC /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DD2A6E4427CFB079007AA8AC /* ViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		DD2A6E5627CFD02B007AA8AC /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				DD2A6E4B27CFB079007AA8AC /* LaunchScreen.storyboard */,
+				DD2A6E4627CFB079007AA8AC /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		DD2A6E5727CFD062007AA8AC /* APP */ = {
+			isa = PBXGroup;
+			children = (
+				DD2A6E4227CFB079007AA8AC /* SceneDelegate.swift */,
+				DD2A6E4027CFB079007AA8AC /* AppDelegate.swift */,
+			);
+			path = APP;
+			sourceTree = "<group>";
+		};
+		DD2A6E5827CFD078007AA8AC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DD2A6E4927CFB079007AA8AC /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		DD2A6E5B27D20EC6007AA8AC /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				DD2A6E5927D0CDBC007AA8AC /* DataForView.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -208,6 +258,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD2A6E4527CFB079007AA8AC /* ViewController.swift in Sources */,
+				DD2A6E5A27D0CDBC007AA8AC /* DataForView.swift in Sources */,
 				DD2A6E4127CFB079007AA8AC /* AppDelegate.swift in Sources */,
 				DD2A6E4327CFB079007AA8AC /* SceneDelegate.swift in Sources */,
 			);
